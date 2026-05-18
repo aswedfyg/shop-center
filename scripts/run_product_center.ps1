@@ -70,7 +70,8 @@ if ($EndAt) {
 
 $env:PYTHONUTF8 = "1"
 
-python .\android\run_product_center.py @Tests
+$Root = Resolve-Path (Join-Path $PSScriptRoot "..")
+python (Join-Path $Root "android\run_product_center.py") @Tests
 $exitCode = $LASTEXITCODE
 
 Remove-Item Env:FEATURED_PRODUCT_START_AT -ErrorAction SilentlyContinue

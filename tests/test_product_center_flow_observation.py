@@ -2,7 +2,7 @@
 
 import unittest
 
-import product_center_flow as flow
+from android import product_center_flow as flow
 
 
 class DestinationObservationTest(unittest.TestCase):

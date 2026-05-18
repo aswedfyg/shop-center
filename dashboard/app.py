@@ -17,12 +17,12 @@ from datetime import datetime
 from http import HTTPStatus
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
-from shared_styles import generate_css_variables
+from common.styles import generate_css_variables
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 REPORT_DIR = ROOT / "reports"
-ENTRYPOINT = ROOT / "Untitled-1.py"
+ENTRYPOINT = ROOT / "android" / "run_product_center.py"
 
 
 class RunState:
@@ -110,8 +110,8 @@ class SafeConstEvaluator:
 
 
 def load_config_snapshot():
-    config_path = ROOT / "product_center_config.py"
-    flow_path = ROOT / "product_center_flow.py"
+    config_path = ROOT / "common" / "config.py"
+    flow_path = ROOT / "android" / "product_center_flow.py"
     evaluator = SafeConstEvaluator()
     if config_path.exists():
         tree = ast.parse(config_path.read_text(encoding="utf-8"))

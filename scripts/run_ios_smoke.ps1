@@ -56,7 +56,8 @@ if ($XcodeOrgId) {
     Remove-Item Env:IOS_XCODE_SIGNING_ID -ErrorAction SilentlyContinue
 }
 
-python .\ios\appium_smoke.py
+$Root = Resolve-Path (Join-Path $PSScriptRoot "..")
+python (Join-Path $Root "ios\appium_smoke.py")
 $exitCode = $LASTEXITCODE
 
 if ($exitCode -ne 0) {

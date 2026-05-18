@@ -3,7 +3,7 @@
 import socket
 import unittest
 
-from dashboard import allocate_unique_port, find_available_port, format_index_html, normalize_devices
+from dashboard.app import allocate_unique_port, find_available_port, format_index_html, normalize_devices
 
 
 class DashboardTest(unittest.TestCase):

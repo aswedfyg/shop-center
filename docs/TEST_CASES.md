@@ -143,7 +143,7 @@
 | `test_04_featured_products_display` | 主打产品列表展示完整性。 |
 | `test_04_featured_products_jump` | 主打产品在各国家/地区下的展示与跳转。 |
 | `test_05_other_region_direct_jump` | 其他地区本地经销商跳转官网，并校验主打产品跳转到对应官网产品页。 |
-| `test_product_center_config.py` | 本地配置级回归：国家/渠道矩阵、店铺链接、主打产品链接和 URL 标识解析。 |
+| `tests/test_product_center_config.py` | 本地配置级回归：国家/渠道矩阵、店铺链接、主打产品链接和 URL 标识解析。 |
 
 ## 12. 验收标准
 

@@ -2,7 +2,7 @@
 
 import unittest
 
-from product_center_config import (
+from common.config import (
     ALL_COUNTRIES,
     CHINA,
     COUNTRIES_WITH_CHANNELS,

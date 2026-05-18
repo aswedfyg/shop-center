@@ -179,7 +179,7 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    A["product_center_config.py"] --> B["国家/渠道配置"]
+    A["common/config.py"] --> B["国家/渠道配置"]
     A --> C["店铺链接配置 SHOP_REGION_LINKS"]
     A --> D["产品链接配置 PRODUCT_PURCHASE_LINKS"]
     B --> E["COUNTRY_CHANNELS"]

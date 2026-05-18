@@ -2,7 +2,7 @@
 setlocal
 title Product Center Dashboard
 
-cd /d "%~dp0"
+cd /d "%~dp0.."
 
 set "PYTHONUTF8=1"
 set "PYTHONIOENCODING=utf-8"
@@ -20,7 +20,7 @@ echo A browser window should open automatically.
 echo If it does not, use the URL printed below.
 echo.
 
-python "%~dp0dashboard.py" --open %*
+python "%CD%\dashboard\app.py" --open %*
 set "exit_code=%ERRORLEVEL%"
 
 echo.
