@@ -1,0 +1,21 @@
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local IDE and assistant state
+.vscode/
+.claude/
+
+# Generated reports and runtime logs
+reports/
+*.log
+*.err.log
+
+# Local browser/Appium artifacts
+chrome-profile*/
+ui-*.png
+
+# OS noise
+.DS_Store
+Thumbs.db
